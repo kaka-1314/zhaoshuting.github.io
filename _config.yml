@@ -1,21 +1,21 @@
-locale                   : "en-US"
-title                    : "WowPage"
-title_separator          : "-"
-name                     : "Your Name"
-description              : &description "A clean academic homepage template."
-url                      : ""
-baseurl                  : ""
-repository               : ""
+locale: "en-US"
+title: "Shuting Zhao"
+name: "Shuting Zhao"
+description: "Academic homepage of Shuting Zhao"
+url: "https://你的GitHub用户名.github.io"
+baseurl: ""
+repository: "你的GitHub用户名/你的GitHub用户名.github.io"
 
 author:
-  avatar           : "1.png"
-  name             : "Your Name"
-  pronouns         :
-  bio              : "Student and researcher."
-  location         : "City, Country"
-  employer         : "Institution or Company"
-  uri              :
-  email            : "name@example.com"
+  avatar: "profile.jpg"
+  name: "Shuting Zhao"
+  bio: "Researcher in human motion reconstruction and medical vision."
+  location: "Shanghai, China"
+  employer: "Fudan University"
+  email: "你的邮箱"
+  googlescholar: "https://scholar.google.com/citations?user=Nongp7UAAAAJ&hl=en"
+  github: "你的GitHub用户名"
+  orcid: ""
 
   arxiv            :
   googlescholar    :
