@@ -3,6 +3,25 @@
    ========================================================================== */
 
 /*
+   Profile avatar tuning panel
+   修改下面这些值，就可以集中调试桌面端头像和页面宽度。
+   ========================================================================== */
+
+$profile-avatar-size          : 250px; // 头像外框：宽度和高度
+$profile-photo-scale          : 1.5;   // 原照片默认放大倍数
+$profile-cartoon-scale        : 1.5;   // 漫画照片默认放大倍数
+$profile-photo-hover-scale    : 1.55;  // hover 时原照片的放大倍数
+$profile-sidebar-width        : 250px; // 左侧栏宽度
+$profile-content-reserve      : 290px; // 正文为侧栏预留的总宽度
+
+// 调整人物在圆形外框中的位置：第一个值左右，第二个值上下。
+$profile-photo-position       : 55% 45%;
+$profile-cartoon-position     : $profile-photo-position;
+
+// hover 淡入淡出的速度。
+$profile-avatar-transition    : 0.4s;
+
+/*
    Typography
    ========================================================================== */
 
@@ -47,7 +66,7 @@ $masthead-height            : 70px;
 
 /* Sidebar properties */
 $sidebar-screen-min-width   : 1024px;
-$sidebar-link-max-width     : 250px;
+$sidebar-link-max-width     : $profile-sidebar-width;
 
 
 

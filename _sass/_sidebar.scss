@@ -36,6 +36,12 @@
     padding-right: 0;
   }
 
+  // Keep the desktop profile column proportional to the avatar.
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    width: $profile-sidebar-width;
+    max-width: $profile-sidebar-width;
+  }
+
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
@@ -77,25 +83,72 @@
    ========================================================================== */
 
 .author__avatar {
+  position: relative;
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
 
-  @include breakpoint($large) {
+  @media screen and (min-width: $sidebar-screen-min-width) {
     display: block;
-    width: auto;
-    height: auto;
+    width: $profile-avatar-size;
+    max-width: $profile-avatar-size;
+    height: $profile-avatar-size;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
   }
 
   img {
-    max-width: 175px;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
+    transition:
+      opacity $profile-avatar-transition ease,
+      transform $profile-avatar-transition ease;
 
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid $border-color;
+    }
+  }
+
+  .author__avatar-image--photo {
+    opacity: 1;
+    object-position: $profile-photo-position;
+    transform: scale($profile-photo-scale);
+  }
+
+  .author__avatar-image--cartoon {
+    opacity: 0;
+    object-position: $profile-cartoon-position;
+    transform: scale($profile-cartoon-scale);
+  }
+
+  &:hover,
+  &:focus-within {
+    .author__avatar-image--photo {
+      opacity: 0;
+      transform: scale($profile-photo-hover-scale);
+    }
+
+    .author__avatar-image--cartoon {
+      opacity: 1;
+      transform: scale($profile-cartoon-scale);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    img {
+      transition: none;
     }
   }
 }

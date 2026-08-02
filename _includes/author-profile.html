@@ -8,10 +8,18 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-      <img src="{{ author.avatar }}" alt="{{ author.name }}">
+      <img class="author__avatar-image author__avatar-image--photo" src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
       {% assign avatar_path = author.avatar | remove_first: "/images/" | prepend: "/images/" | prepend: base_path %}
-      <img src="{{ avatar_path }}" alt="{{ author.name }}">
+      <img class="author__avatar-image author__avatar-image--photo" src="{{ avatar_path }}" alt="{{ author.name }}">
+    {% endif %}
+    {% if author.avatar_hover %}
+      {% if author.avatar_hover contains "://" %}
+        <img class="author__avatar-image author__avatar-image--cartoon" src="{{ author.avatar_hover }}" alt="Illustrated portrait of {{ author.name }}">
+      {% else %}
+        {% assign avatar_hover_path = author.avatar_hover | remove_first: "/images/" | prepend: "/images/" | prepend: base_path %}
+        <img class="author__avatar-image author__avatar-image--cartoon" src="{{ avatar_hover_path }}" alt="Illustrated portrait of {{ author.name }}">
+      {% endif %}
     {% endif %}
   </div>
 

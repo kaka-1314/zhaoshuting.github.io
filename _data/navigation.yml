@@ -2,28 +2,20 @@
 
 main:
   - title: "News"
-    url: "/#news"
+    url: "/#-news"
 
-  - title: "Experience"
-    url: "/#experience"
+  - title: "Education"
+    url: "/#-education"
 
-  - title: "Pub"
-    url: "/#publications"
+  - title: "Research"
+    url: "/#-research-interests"
 
-  - title: "Project"
-    url: "/#projects"
+  - title: "Publications"
+    url: "/#-publications"
 
   - title: "Awards"
-    url: "/#awards"
+    url: "/#-awards"
 
-  - title: "Services"
-    url: "/#services"
-    
-  - title: "Talks"
-    url: "/#talks"
-    
-  - title: "CV-En"
-    url: "/files/weidongtang_resume.pdf"
-
-  # - title: "CV-Cn"
-  #   url: "/files/chinese_resume.pdf"
+  # Add a CV link after placing the PDF in files/, for example:
+  # - title: "CV"
+  #   url: "/files/shuting_zhao_cv.pdf"

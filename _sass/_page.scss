@@ -23,6 +23,13 @@
     @include suffix(2 of 12);
   }
 
+  // Reserve room for the profile sidebar. Adjust it in _variables.scss.
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    width: calc(100% - #{$profile-content-reserve});
+    padding-left: 20px;
+    padding-right: 0;
+  }
+
   .page__inner-wrap {
     @include full();
 

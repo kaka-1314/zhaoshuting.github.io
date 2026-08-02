@@ -2,23 +2,21 @@ locale: "en-US"
 title: "Shuting Zhao"
 name: "Shuting Zhao"
 description: "Academic homepage of Shuting Zhao"
-url: "https://你的GitHub用户名.github.io"
-baseurl: ""
-repository: "你的GitHub用户名/你的GitHub用户名.github.io"
+url: "https://kaka-1314.github.io"
+baseurl: "/zhaoshuting.github.io"
+repository: "kaka-1314/zhaoshuting.github.io"
 
 author:
-  avatar: "profile.jpg"
+  avatar: "profile-web.jpg"
+  avatar_hover: "profile-cartoon-sunlit-happy-web.jpg"
   name: "Shuting Zhao"
-  bio: "Researcher in human motion reconstruction and medical vision."
-  location: "Shanghai, China"
-  employer: "Fudan University"
-  email: "你的邮箱"
-  googlescholar: "https://scholar.google.com/citations?user=Nongp7UAAAAJ&hl=en"
-  github: "你的GitHub用户名"
-  orcid: ""
+  bio: "Ph.D. student at NUS researching AI for health, human-centered AI, and 3D vision."
+  location: "Singapore"
+  employer: "National University of Singapore"
+  email: "yuki.zhaoshuting@gmail.com"
 
   arxiv            :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=Nongp7UAAAAJ&hl=en"
   impactstory      :
   orcid            :
   semantic         :
@@ -28,7 +26,7 @@ author:
   bitbucket        :
   codepen          :
   dribbble         :
-  github           :
+  github           : "kaka-1314"
   kaggle           :
   stackoverflow    :
 
@@ -126,8 +124,10 @@ exclude:
   - config
   - gulpfile.js
   - log
+  - markdown_generator
   - node_modules
   - package.json
+  - talkmap
   - tmp
   - vendor
 
@@ -143,6 +143,7 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+force_polling: true
 
 kramdown:
   input: GFM
