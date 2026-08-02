@@ -160,7 +160,7 @@ My research focuses on human motion tracking, 3D reconstruction, and depth estim
         </strong><br>
         <i><span class="self-author">Shuting Zhao</span>, Linxin Bai, Liangjing Shao, Ye Zhang, Xinrong Chen.</i><br>
         <span class="publication-summary">A lightweight state-space model for real-time full-body avatar pose reconstruction from sparse HMD and hand observations, improving accuracy, efficiency, and motion smoothness.</span><br>
-        <span class="publication-meta"><b><i>ICMR 2025</i></b></span>
+        <span class="publication-meta"><b><i>ICMR 2025 · Oral</i></b></span>
         <span class="publication-links">
           <a href="https://arxiv.org/abs/2504.18332" target="_blank"><em>[arXiv]</em></a>
           <a href="https://dl.acm.org/doi/10.1145/3731715.3733437" target="_blank"><em>[paper]</em></a>
