@@ -8,7 +8,7 @@ Personal academic homepage for Shuting Zhao, built with Jekyll and hosted on Git
 bundle exec jekyll serve --livereload
 ```
 
-Then open the local URL shown by Jekyll, usually `http://127.0.0.1:4000/zhaoshuting.github.io/`.
+Then open the local URL shown by Jekyll, usually `http://127.0.0.1:4000/zhaoshuting/`.
 
 ## Main Files
 

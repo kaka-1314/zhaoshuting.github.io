@@ -3,8 +3,8 @@ title: "Shuting Zhao"
 name: "Shuting Zhao"
 description: "Academic homepage of Shuting Zhao"
 url: "https://kaka-1314.github.io"
-baseurl: "/zhaoshuting.github.io"
-repository: "kaka-1314/zhaoshuting.github.io"
+baseurl: "/zhaoshuting"
+repository: "kaka-1314/zhaoshuting"
 
 author:
   avatar: "profile-web.jpg"
